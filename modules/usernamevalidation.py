@@ -12,9 +12,9 @@ async def runuv(event):
     try:
         scanreport = is_safe_username(f"{getusername.message}")
         if scanreport == True:
-            await event.client.send_message(messagelocation, f"Good News, {getusername.message} Was Not Found On Ridogram Blacklist.")
+            await event.client.send_message(messagelocation, f"Good News, {getusername.message} Was Not Found On Team Tasik Blacklist.")
         elif scanreport == False:
-            await event.client.send_message(messagelocation, f"{getusername.message} Was Found On Ridogram Blacklist.")
+            await event.client.send_message(messagelocation, f"{getusername.message} Was Found On Team Tasik Blacklist.")
         else:
             await event.client.send_message(messagelocation, "Something Went Wrong")
     except:
