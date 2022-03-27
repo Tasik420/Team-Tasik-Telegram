@@ -4,7 +4,7 @@ from speedtest import Speedtest
 @events.register(events.NewMessage(outgoing=True, pattern=r'\.st'))
 async def runst(event):
     messagelocation = event.to_id
-    await event.edit("Speedtest Of Ridogram Server Has Started...")
+    await event.edit("Speedtest Of Team Tasik Server Has Started...")
     try:
         starttest = Speedtest()
         await event.edit("Loading Servers List...")
