@@ -4,7 +4,7 @@ from async_timeout import asyncio
 
 @events.register(events.NewMessage(outgoing=True, pattern=r'\.uh'))
 async def runuh(event):
-    await event.edit("Ridogram Collect User Records...")
+    await event.edit("Team Tasik Collect User Records...")
     sleep(2)
     getinformation = await event.get_reply_message()
     targetid = getinformation.sender_id
