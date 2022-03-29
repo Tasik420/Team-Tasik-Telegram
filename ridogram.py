@@ -161,6 +161,9 @@ with client as ridogram:
 with client as ridogram:
     ridogram.add_event_handler(modules.updater.runupdate)
 
+with client as ridogram:
+    ridogram.add_event_handler(modules.groupadminlist.runsa)
+
 client.start()
 print("Team Tasik Started")
 client.run_until_disconnected()
